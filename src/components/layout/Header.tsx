@@ -1,19 +1,20 @@
 import { Fragment, useContext, useEffect } from "react"
-import AuthContext from "../stores/authContext"
-import useAuth from "../lib/useAuth"
-
+import AuthContext from "../../stores/authContext"
+import useAuth from "../../lib/useAuth"
+import type { NextPage } from "next"
 
 type Props = {
 
 };
 
-const Header = ({ }: Props) => {
+
+const Header: NextPage<Props> = ({ children }) => {
     const { notif } = useContext(AuthContext)
     const { auth, isLoading, error } = useAuth();
 
     console.log("header auth", auth)
-    console.log("header auth", isLoading)
-    console.log("header auth", error)
+    console.log("header isLoading", isLoading)
+    console.log("header error", error)
     // console.log("user ", user)
     // console.log("login ", login)
     // console.log("logout ", logout)
@@ -30,7 +31,7 @@ const Header = ({ }: Props) => {
                 <div>
                     App Logo
                 </div>
-                <div className={"flex ml-auto"}>
+                <div className={"hidden sm:flex ml-auto"}>
                     <div className={"ml-4"}>About</div>
                     {auth ? (
                         <Fragment>

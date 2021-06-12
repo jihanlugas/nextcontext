@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "formik": "^2.2.9",
     "moment": "^2.29.1",
     "next": "10.2.3",
     "node-sass": "^5.0.0",

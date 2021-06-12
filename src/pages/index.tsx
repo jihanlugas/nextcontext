@@ -1,5 +1,14 @@
+import Main from "../components/layout/Main"
+import Head from "next/head"
+
+
 export default function Home() {
     return (
-        <div className={"p-4"}>Tes</div>
+        <Main>
+            <Head>
+                <title>Home</title>
+            </Head>
+            <div className={"p-4"}>Tes</div>
+        </Main>
     )
 }
