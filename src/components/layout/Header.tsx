@@ -21,9 +21,11 @@ const Header: NextPage<Props> = ({ children }) => {
     // console.log("authReady ", authReady)
     console.log("notif ", notif)
 
-    // useEffect(() => {
-    //     notif.success("tes")
-    // }, [])
+    useEffect(() => {
+        setTimeout(() => {
+            notif.error("tes")
+        }, 1000);
+    }, [])
 
     return (
         <header>

@@ -56,7 +56,7 @@
   @apply -mt-24;
   z-index: 10000;
   @apply text-gray-200;
-  transition: margin 400;
+  transition: margin 800ms;
   @apply w-full;
 
   &.active {
