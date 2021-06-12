@@ -8,7 +8,7 @@ export default createProxyMiddleware('/api', {
         "Content-Type": "application/json",
     },
     pathRewrite: {
-        '^/api': '/'
+        '^/api': ''
     }
 });
 
