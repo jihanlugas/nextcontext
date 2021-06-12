@@ -7,9 +7,9 @@ export default createProxyMiddleware('/api', {
         "Accept": "application/json",
         "Content-Type": "application/json",
     },
-    pathRewrite: {
-        '^/api': ''
-    }
+    // pathRewrite: {
+    //     '^/api': ''
+    // }
 });
 
 export const config = {
